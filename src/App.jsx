@@ -11,7 +11,7 @@ const App = () => {
   return (
     <Router>
       <div className="min-h-screen flex-col justify-between bg-[#141414] pt-4">
-        <header>
+        <Header/>
           <Routes>
             <Route  path="/" element={<Home/>}/>
             <Route  path="/jogos" element={<Jogos/>}/>
@@ -19,7 +19,7 @@ const App = () => {
             <Route  path="/login" element={<Login/>}/>
             <Route  path="*" element={<Error/>}/>
           </Routes>
-        </header>
+        <Footer/>
       </div>
 
     </Router>
